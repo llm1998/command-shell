@@ -31,7 +31,7 @@ Shell/
 **Como executar**:
 ```powershell
 # Navegar até a pasta
-cd "D:\Workspace\morel_group\Shell\Powershell"
+cd "C:\\Shell\Powershell"
 
 # Executar o script
 .\execute-many-curl-commands.ps1
@@ -53,7 +53,7 @@ cd "D:\Workspace\morel_group\Shell\Powershell"
 **Como executar**:
 ```powershell
 # Navegar até a pasta
-cd "D:\Workspace\morel_group\Shell\Powershell"
+cd "C:\\Shell\Powershell"
 
 # Executar o script
 .\get-windows-key.ps1
@@ -78,7 +78,7 @@ cd "D:\Workspace\morel_group\Shell\Powershell"
 **Como executar**:
 ```bash
 # Navegar até a pasta
-cd "/d/Workspace/morel_group/Shell/ShellScript"
+cd "/C/Shell/ShellScript"
 
 # Tornar executável (primeira vez)
 chmod +x execute-many-curl-commands.sh

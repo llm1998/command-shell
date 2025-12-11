@@ -1,4 +1,4 @@
-# Script PowerShell para executar múltiplos comandos curl
+﻿# Script PowerShell para executar múltiplos comandos curl
 # Autor: Sistema
 # Data: $(Get-Date -Format "dd/MM/yyyy")
 
@@ -9,8 +9,8 @@ Write-Host "Iniciando execução dos comandos..." -ForegroundColor Yellow
 # Adicione seus comandos curl aqui, um por linha
 $curlCommands = @(
     # APIs públicas simples para testes
-    "curl --location 'https://httpbin.org/get'",
-    "curl --location 'https://jsonplaceholder.typicode.com/posts/1'"
+    "curl.exe --location 'https://httpbin.org/get'",
+    "curl.exe --location 'https://jsonplaceholder.typicode.com/posts/1'"
 )
 
 # Função para executar um comando curl e tratar erros
@@ -85,7 +85,7 @@ function Main {
 }
 
 # Verifica se o curl está disponível
-if (!(Get-Command curl -ErrorAction SilentlyContinue)) {
+if (!(Get-Command curl.exe -ErrorAction SilentlyContinue)) {
     Write-Host "ERRO: curl não encontrado no sistema!" -ForegroundColor Red
     Write-Host "Por favor, instale o curl ou verifique se está no PATH do sistema." -ForegroundColor Yellow
     exit 1
